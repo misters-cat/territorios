@@ -81,3 +81,8 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 ## 3.3.3 — Panel de distancia plegable
 - Distancia a otro territorio inicia contraída, con botón Mostrar/Ocultar y preferencia local independiente de cercanos. No desactiva GPS ni elimina el destino seleccionado.
 - Borrar datos locales elimina ambas preferencias. Catálogo intacto.
+
+## 3.3.4 — Información del mapa plegable
+- Botón general Mostrar/Ocultar bajo los controles del mapa. Agrupa aviso de ubicación, cercanos, distancia, encuentros, leyenda y texto explicativo. Contraído por defecto; recuerda la preferencia local.
+- Mi ubicación y Encuentros abren el bloque temporalmente para mostrar permisos, resultados o errores. Plegar no borra el GPS ni cambia los estados internos; borrar datos locales elimina la preferencia.
+- Conserva catálogo y controles de privacidad.
