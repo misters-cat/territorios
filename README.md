@@ -98,8 +98,3 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Ampliar mapa y Abrir original siempre visibles; seis herramientas agrupadas en un panel plegable, contraído por defecto y con preferencia local.
 - Cómo llegar plegable y contraído para cada nueva selección, conserva la distancia del territorio y las opciones de navegación. Accesos de ruta en cercanos y distancia del mapa interactivo conservados.
 - Borrar datos locales elimina también la nueva preferencia. Catálogo y esquema de privacidad intactos.
-
-## 3.4.2 — Manual interactivo
-- Ayuda desde Ajustes, pie de página e instalación. Nueve temas desplegables, búsqueda local, accesos rápidos y controles Mostrar/Ocultar todos.
-- Guía de cuatro pasos con retroalimentación, sin GPS ni cambios en datos. Incluye solución de permisos de iPhone comprobada por el usuario.
-- Ayuda en caché tras una instalación/carga válida, sin recursos externos adicionales. Catálogo intacto.
