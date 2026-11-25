@@ -51,3 +51,6 @@ Corrige la búsqueda mientras se escribe: seleccionar automáticamente un result
 - Borrar preferencias, favoritos, recientes y copias offline del navegador; conserva catálogo y permisos.
 - Retira los seis IDs de carpetas del catálogo actual; migración de respaldos antiguos elimina el campo folder. No altera Drive ni el historial de GitHub.
 - Esquema de campos permitidos, filtro heurístico de datos personales, revisión explícita previa a publicar, KML sin nombres originales de placemarks, imágenes recodificadas sin metadatos originales. Los controles no detectan toda información confidencial en texto, imágenes ni enlaces y no impiden la edición directa en GitHub. No es una certificación legal.
+
+## 3.2.4 — Corrección del mapa de calles
+Se sustituye la política no-referrer en la web y Administración por strict-origin y se configura la capa OpenStreetMap para enviar solo el origen web. Esto responde al bloqueo 403 por ausencia de Referer, respetando la política oficial https://operations.osmfoundation.org/policies/tiles/ . Se mantienen las demás medidas de privacidad y la caché HTTP normal. La recuperación efectiva del mapa depende del proveedor y del navegador; no se alteran los territorios ni las imágenes.
