@@ -20,3 +20,6 @@ El modo offline conserva el catálogo local; la administración y los mapas exte
 
 ## 3.1
 Selector de tema claro, oscuro o automático, compartido entre consulta y administración. La pantalla de acceso administrativo usa el token de GitHub como contraseña. GitHub Pages es público: el acceso visual no equivale a ocultar el HTML o los datos públicos; la protección de escritura es la autorización de GitHub. No se utiliza una contraseña fija incrustada.
+
+## 3.1.1
+Botón único de sol/luna para alternar claro y oscuro. Al abrir por primera vez se usa el tema del sistema; después se conserva la elección manual en cada dispositivo.
