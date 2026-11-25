@@ -92,3 +92,9 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Adaptación de portada, navegación, mapas, fichas, paneles de información, visor, descargas, ajustes, Administración y política de privacidad; tema oscuro de alto contraste.
 - Distancia destacada con tamaño mayor, aclaración al perímetro y precisión GPS separadas. Colores editables de los sectores conservados como identificadores visuales.
 - Conserva controles, funciones de GPS, almacenamiento local, privacidad, impresión, rutas y catálogo sin cambios. Preferencias y mapas offline mantienen sus claves. Pruebas de sintaxis, referencias DOM, preservación de catálogo y presentación estructural; revisión visual en dispositivos pendiente.
+
+## 3.4.1 — Ficha de territorio compacta
+- Dos columnas iguales y áreas de mapa e imagen de altura comparable en escritorio; en móvil se mantienen apiladas.
+- Ampliar mapa y Abrir original siempre visibles; seis herramientas agrupadas en un panel plegable, contraído por defecto y con preferencia local.
+- Cómo llegar plegable y contraído para cada nueva selección, conserva la distancia del territorio y las opciones de navegación. Accesos de ruta en cercanos y distancia del mapa interactivo conservados.
+- Borrar datos locales elimina también la nueva preferencia. Catálogo y esquema de privacidad intactos.
