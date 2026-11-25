@@ -65,3 +65,8 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Ajustes centralizados: tema, instalación, descargas, privacidad, borrado y comprobación de actualización.
 - Diagnóstico administrativo del esquema, perímetros y referencias, y comprobación voluntaria de imágenes públicas con concurrencia limitada. Un resultado no confirmado puede ser por permisos, red o proveedor. Se conservan los controles de privacidad de publicación.
 - Validación técnica: sintaxis y referencias DOM, catálogo original intacto, QR cotejado con matriz de referencia, cálculos de proximidad y reglas de privacidad. Pruebas integrales de interfaz y dispositivos pendientes.
+
+## 3.3.1 — GPS en aplicaciones instaladas
+- Aviso de privacidad integrado y botón Permitir ubicación que llama directamente a geolocalización mediante una interacción del usuario, sin confirmación nativa previa.
+- Distingue iPhone/iPad en modo instalado y ofrece instrucciones de permisos. Reintenta una vez con precisión estándar si hay fallo de posición o tiempo de espera; nunca reintenta automáticamente un permiso denegado.
+- Se mantiene el GPS voluntario, sin guardar coordenadas ni resultado automático en recientes. No cambia el manifiesto ni requiere reinstalar. iOS controla el permiso; prueba física pendiente.
