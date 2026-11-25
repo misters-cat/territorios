@@ -38,3 +38,6 @@ Elimina todos los accesos a carpetas de Drive del catálogo, explorador y fichas
 - Administración: editor Leaflet sobre mapa real con dibujo o arrastre de vértices, vista previa del catálogo y plano, recuperación de las últimas 30 versiones del catálogo como borrador. Conserva imágenes históricas que sigan en main. El token solo vive en memoria; la autorización de escritura depende de GitHub.
 
 Verificación de código: sintaxis JS, catálogo original sin cambios, 59 referencias interiores calculadas dentro de los polígonos. Pruebas en navegador y dispositivos pendientes. GitHub Pages sigue siendo la plataforma de publicación y almacenamiento.
+
+## 3.2.1
+Control cartográfico independiente con dos botones Calles y Satélite, iconos esquemáticos y estado activo visible. Se conserva la selección geográfica al cambiar de capa.
