@@ -1,15 +1,19 @@
-# Territorios Malloa 2.1
+# Territorios Malloa 3.0
 
-Sitio estático para GitHub Pages. 59 territorios y seis sectores, conservando los IDs y permisos de Google Drive y My Maps originales.
+Web pública: https://misters-cat.github.io/territorios/
+Administración: https://misters-cat.github.io/territorios/admin.html
 
-- Plano general incrustado; catálogo por sector y búsqueda.
-- Fichas con vista previa de Drive, enlaces directos, descarga y compartir.
-- Favoritos e historial locales, sin servidor ni cuentas adicionales.
-- PWA: el service worker guarda únicamente el catálogo y recursos propios; los mapas externos no se almacenan. Las descargas se gestionan manualmente.
-- El mapa de My Maps es un iframe externo: sus marcadores no se sincronizan automáticamente con el catálogo. Para implementar esa integración hace falta un KML/GeoJSON real con identificadores de territorios.
-- La vista previa y descarga dependen de los permisos originales de Drive.
+## Administrar sin ChatGPT
 
-Versión 2.0. El historial previo se conserva en Git.
+1. Abre Administración. Edita territorios, nombres, sectores, enlaces o imágenes; aplica cada formulario al borrador. Los límites se pueden dibujar en la vista esquemática, editar como GeoJSON o importar por KML.
+2. Crea un fine-grained personal access token en https://github.com/settings/personal-access-tokens/new. Selecciona únicamente el repositorio territorios y Contents: Read and write. Usa una caducidad breve.
+3. Ingresa el token solo en la página administrativa y pulsa Publicar. Se crea un commit normal con el catálogo y las imágenes nuevas, sin forzar main. El token no se guarda. El administrador necesita permisos de escritura en GitHub.
+4. GitHub Pages despliega la versión actualizada. Si cambia el catálogo mientras editas, el editor rechaza la publicación para evitar sobrescribir trabajo ajeno.
+5. Descarga copias JSON y consulta el historial de GitHub. Para restaurar una versión anterior, recupera el catálogo y sus imágenes desde el historial. Las copias JSON no incluyen imágenes binarias.
 
-## 2.1 — Explorador geográfico sincronizado
-59 polígonos del KML original aportado por el usuario. 46–48 usan las entradas NEW; 58 conserva sus tres anillos internos. Leaflet 1.9.4 y teselas de OpenStreetMap. El plano original queda como respaldo. Las imágenes se consultan en Drive y respetan sus permisos; si la miniatura no está disponible se usa el visor de Drive. No se almacenan los mapas externos sin conexión.
+## Arquitectura
+
+catalogo.json contiene sectores, territorios y geometrías GeoJSON. data-schema.js valida el catálogo. index.html lee los datos dinámicamente. admin.html solo usa el API REST de GitHub, no tiene servidor ni almacena credenciales. Las imágenes nuevas se guardan en maps/. El sitio/repositorio es público: no subas información sensible. Las imágenes históricas siguen en Drive y conservan sus permisos; los mapas de fondo usan Leaflet/OpenStreetMap. El KML original (59 territorios, 46–48 NEW, anillos internos del 58) fue convertido en la versión 2.1. territorios.geojson queda como referencia histórica, el archivo activo es catalogo.json.
+
+El modo offline conserva el catálogo local; la administración y los mapas externos requieren conexión. No es un editor del diseño HTML/CSS, ni modifica el mapa original de Google My Maps.
+
