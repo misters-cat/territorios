@@ -41,3 +41,6 @@ Verificación de código: sintaxis JS, catálogo original sin cambios, 59 refere
 
 ## 3.2.1
 Control cartográfico independiente con dos botones Calles y Satélite, iconos esquemáticos y estado activo visible. Se conserva la selección geográfica al cambiar de capa.
+
+## 3.2.2
+Corrige la búsqueda mientras se escribe: seleccionar automáticamente un resultado único en el mapa conserva el texto y la posición del cursor. La vista Lista filtra sin cambiar automáticamente a Mapa; los clics explícitos y la navegación siguen seleccionando territorios.
