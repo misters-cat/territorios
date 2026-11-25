@@ -26,3 +26,15 @@ Botón único de sol/luna para alternar claro y oscuro. Al abrir por primera vez
 
 ## 3.1.2
 Elimina todos los accesos a carpetas de Drive del catálogo, explorador y fichas. Se retira el campo de carpeta en Administración; los identificadores existentes se conservan en el catálogo para no perder datos.
+
+## 3.2 — Herramientas de terreno y administración
+- GPS bajo solicitud del usuario, cálculo de territorio con polígonos reales (incluidos anillos interiores), marcador de precisión y aviso de límites coincidentes. La app no guarda ni transmite coordenadas GPS a GitHub.
+- Alternancia calles OSM / satélite Sentinel-2 cloudless 2024 de EOX. Servicio de demostración externo, resolución regional (no detalle de casas) y sin garantía de disponibilidad; si falla se vuelve a calles. No se descargan teselas masivamente.
+- Cómo llegar mediante Google Maps, Apple Maps o Waze. Usa un punto de encuentro asociado o una referencia interior calculada; no garantiza acceso por camino público.
+- Mapas individuales sin conexión: descarga a almacenamiento local si el origen permite CORS, o importación manual de JPG/PNG/WebP descargado. El navegador puede liberar almacenamiento; no es respaldo permanente. El mapa base requiere Internet. Las copias se guardan por número e identificador de imagen.
+- Pantalla completa para mapa general y ficha individual.
+- Puntos de encuentro administrables: nombre, latitud, longitud, nota y territorio opcional. Se almacenan como campo meetings en catalogo.json; los registros existentes no se alteran. No publicar domicilios privados.
+- Consulta de version.json con aviso y botón de actualización; se activa a partir de la versión 3.2. El catálogo sigue consultando datos actualizados al abrir.
+- Administración: editor Leaflet sobre mapa real con dibujo o arrastre de vértices, vista previa del catálogo y plano, recuperación de las últimas 30 versiones del catálogo como borrador. Conserva imágenes históricas que sigan en main. El token solo vive en memoria; la autorización de escritura depende de GitHub.
+
+Verificación de código: sintaxis JS, catálogo original sin cambios, 59 referencias interiores calculadas dentro de los polígonos. Pruebas en navegador y dispositivos pendientes. GitHub Pages sigue siendo la plataforma de publicación y almacenamiento.
