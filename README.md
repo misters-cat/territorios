@@ -44,3 +44,10 @@ Control cartográfico independiente con dos botones Calles y Satélite, iconos e
 
 ## 3.2.2
 Corrige la búsqueda mientras se escribe: seleccionar automáticamente un resultado único en el mapa conserva el texto y la posición del cursor. La vista Lista filtra sin cambiar automáticamente a Mapa; los clics explícitos y la navegación siguen seleccionando territorios.
+
+## 3.2.3 — Privacidad
+- Política común en privacidad.html (GitHub Pages y sitio original; añadir enlace manual en Google Sites).
+- Aviso previo al GPS, consentimiento voluntario del navegador, sin persistencia de coordenadas. Proveedores pueden recibir zonas consultadas e IP.
+- Borrar preferencias, favoritos, recientes y copias offline del navegador; conserva catálogo y permisos.
+- Retira los seis IDs de carpetas del catálogo actual; migración de respaldos antiguos elimina el campo folder. No altera Drive ni el historial de GitHub.
+- Esquema de campos permitidos, filtro heurístico de datos personales, revisión explícita previa a publicar, KML sin nombres originales de placemarks, imágenes recodificadas sin metadatos originales. Los controles no detectan toda información confidencial en texto, imágenes ni enlaces y no impiden la edición directa en GitHub. No es una certificación legal.
