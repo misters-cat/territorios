@@ -23,3 +23,6 @@ Selector de tema claro, oscuro o automático, compartido entre consulta y admini
 
 ## 3.1.1
 Botón único de sol/luna para alternar claro y oscuro. Al abrir por primera vez se usa el tema del sistema; después se conserva la elección manual en cada dispositivo.
+
+## 3.1.2
+Elimina todos los accesos a carpetas de Drive del catálogo, explorador y fichas. Se retira el campo de carpeta en Administración; los identificadores existentes se conservan en el catálogo para no perder datos.
