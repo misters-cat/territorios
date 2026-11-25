@@ -70,3 +70,10 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Aviso de privacidad integrado y botón Permitir ubicación que llama directamente a geolocalización mediante una interacción del usuario, sin confirmación nativa previa.
 - Distingue iPhone/iPad en modo instalado y ofrece instrucciones de permisos. Reintenta una vez con precisión estándar si hay fallo de posición o tiempo de espera; nunca reintenta automáticamente un permiso denegado.
 - Se mantiene el GPS voluntario, sin guardar coordenadas ni resultado automático en recientes. No cambia el manifiesto ni requiere reinstalar. iOS controla el permiso; prueba física pendiente.
+
+## 3.3.2 — Cercanos y rutas
+- Encabezado Mostrar/Ocultar en cercanos con preferencia local; quitar ubicación elimina marcador, resultados y distancias de la sesión.
+- Ver y Ruta por cada cercano; selector de cualquiera de los territorios con distancia aproximada al perímetro, precisión GPS y opciones de navegación. La ficha seleccionada también muestra su distancia cuando hay GPS.
+- Reutiliza los puntos de encuentro/accesos públicos asociados en Administración como destino preferente; en su ausencia, punto interior aproximado con advertencia de acceso. Google Maps, Apple Maps y Waze calculan la ruta por su cuenta; los enlaces solo contienen destino, no el GPS de Territorios.
+- Ayuda para GPS instalado en iPhone: autorizar primero en Safari y luego en la app, procedimiento confirmado por el usuario.
+- Conserva el catálogo, los permisos y controles de privacidad. Se añade preferencia de cercanos al borrado local.
