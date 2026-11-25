@@ -54,3 +54,14 @@ Corrige la búsqueda mientras se escribe: seleccionar automáticamente un result
 
 ## 3.2.4 — Corrección del mapa de calles
 Se sustituye la política no-referrer en la web y Administración por strict-origin y se configura la capa OpenStreetMap para enviar solo el origen web. Esto responde al bloqueo 403 por ausencia de Referer, respetando la política oficial https://operations.osmfoundation.org/policies/tiles/ . Se mantienen las demás medidas de privacidad y la caché HTTP normal. La recuperación efectiva del mapa depende del proveedor y del navegador; no se alteran los territorios ni las imágenes.
+
+## 3.3 — Experiencia móvil y uso en terreno
+- Interfaz compacta, navegación de seis secciones con Descargas y Ajustes. Conserva mapa, lista, favoritos y recientes.
+- Carga cache-first del catálogo y aplicación después de una carga inicial válida; actualización del catálogo en segundo plano con aviso para recargar, sin interrumpir la consulta. No precarga mapas base externos.
+- Centro de descargas con número de copias, tamaño de imágenes, apertura y eliminación individual/total; importación manual de JPG/PNG/WebP ante limitaciones de Drive.
+- Visor local con ampliación por botones y gestos, giro, desplazamiento, ajuste y modo pantalla completa. Si Drive solo permite el visor incrustado, sus controles propios siguen disponibles.
+- Hasta cinco territorios cercanos calculados localmente por distancia aproximada al perímetro. GPS con aviso previo y opción de ocultarlo; no se guarda su posición ni el resultado automático en recientes.
+- Tarjeta imprimible con mapa, sector y QR generado localmente (versión 4-L). Se requiere una imagen legible disponible en la web o guardada localmente; no se envían datos a un generador de QR externo.
+- Ajustes centralizados: tema, instalación, descargas, privacidad, borrado y comprobación de actualización.
+- Diagnóstico administrativo del esquema, perímetros y referencias, y comprobación voluntaria de imágenes públicas con concurrencia limitada. Un resultado no confirmado puede ser por permisos, red o proveedor. Se conservan los controles de privacidad de publicación.
+- Validación técnica: sintaxis y referencias DOM, catálogo original intacto, QR cotejado con matriz de referencia, cálculos de proximidad y reglas de privacidad. Pruebas integrales de interfaz y dispositivos pendientes.
