@@ -77,3 +77,7 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Reutiliza los puntos de encuentro/accesos públicos asociados en Administración como destino preferente; en su ausencia, punto interior aproximado con advertencia de acceso. Google Maps, Apple Maps y Waze calculan la ruta por su cuenta; los enlaces solo contienen destino, no el GPS de Territorios.
 - Ayuda para GPS instalado en iPhone: autorizar primero en Safari y luego en la app, procedimiento confirmado por el usuario.
 - Conserva el catálogo, los permisos y controles de privacidad. Se añade preferencia de cercanos al borrado local.
+
+## 3.3.3 — Panel de distancia plegable
+- Distancia a otro territorio inicia contraída, con botón Mostrar/Ocultar y preferencia local independiente de cercanos. No desactiva GPS ni elimina el destino seleccionado.
+- Borrar datos locales elimina ambas preferencias. Catálogo intacto.
