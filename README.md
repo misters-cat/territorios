@@ -86,3 +86,9 @@ Se sustituye la política no-referrer en la web y Administración por strict-ori
 - Botón general Mostrar/Ocultar bajo los controles del mapa. Agrupa aviso de ubicación, cercanos, distancia, encuentros, leyenda y texto explicativo. Contraído por defecto; recuerda la preferencia local.
 - Mi ubicación y Encuentros abren el bloque temporalmente para mostrar permisos, resultados o errores. Plegar no borra el GPS ni cambia los estados internos; borrar datos locales elimina la preferencia.
 - Conserva catálogo y controles de privacidad.
+
+## 3.4 — Renovación visual
+- Diseño inspirado en la tarjeta de referencia: tipografía nativa del dispositivo, superficies neutras, bordes finos, botones redondeados y azul oscuro para acciones principales. No se añaden fuentes ni recursos externos.
+- Adaptación de portada, navegación, mapas, fichas, paneles de información, visor, descargas, ajustes, Administración y política de privacidad; tema oscuro de alto contraste.
+- Distancia destacada con tamaño mayor, aclaración al perímetro y precisión GPS separadas. Colores editables de los sectores conservados como identificadores visuales.
+- Conserva controles, funciones de GPS, almacenamiento local, privacidad, impresión, rutas y catálogo sin cambios. Preferencias y mapas offline mantienen sus claves. Pruebas de sintaxis, referencias DOM, preservación de catálogo y presentación estructural; revisión visual en dispositivos pendiente.
